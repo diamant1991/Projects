@@ -380,3 +380,67 @@
 	padding-right: 14px;
 	border-right: 2px solid #c7c7c7;
 }
+
+/*---------------------------------------Страница о студии----------------------------------------*/
+
+.under-nav{
+	overflow: hidden;
+	background-color: #464646;
+	padding-top: 65px;
+	padding-bottom: 35px;
+}
+.under-nav nav{
+	width: 425px;
+	margin: 0 auto;
+}
+.under-nav nav ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+	font-family: 'Century Gothic';
+}
+	.under-nav nav ul li a:hover, .under-nav nav ul li a.active{
+		color: #9bd37e;
+	}
+.under-nav nav ul li{
+	float: left;
+	padding-right: 8px;
+	padding-left: 8px;
+	padding-bottom: 1px;
+	border-right:1px solid #5c5c5c;
+}
+.under-nav nav ul li:first-child{
+	padding-left: 0;
+}
+.under-nav nav ul li:last-child{
+	border-right: 0;
+}
+.arrow-left, .about-slider-img, .arrow-right{
+	float: left;
+}
+.about-slider{
+	padding-top: 25px;
+	background-color: #ebebeb;
+	overflow: hidden;
+}
+.arrow-slider{
+	display: block;
+	background:url(../images/about-arrow.png) no-repeat top left;
+}
+.slider-arrow-top{background-position: 0 -251px; width: 33px; height: 33px;}
+	.slider-arrow-top:hover{background-position: 0 -584px; width: 33px; height: 33px;}
+.slider-arrow-bottom{background-position: 0 0; width: 33px; height: 33px; margin-top: 10px;}
+	.slider-arrow-bottom:hover{background-position: 0 -333px; width: 33px; height: 33px;}
+.slider-arrow-left{background-position: 0 -83px; width: 33px; height: 33px;float: left;}
+	.slider-arrow-left:hover{background-position: 0 -416px; width: 33px; height: 33px;}
+.slider-arrow-right{background-position: 0 -166px; width: 33px; height: 33px;float: left;margin-left: 10px;}
+	.slider-arrow-right:hover{background-position: 0 -499px; width: 33px; height: 33px;}
+
+.arrow-left{
+	position: relative;
+	top: 220px;
+}
+.arrow-right{
+	position: relative;
+	top: 250px;
+}
