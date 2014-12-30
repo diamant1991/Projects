@@ -1,0 +1,125 @@
+
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  { outline: none; }
+
+.slides,
+.flex-control-nav{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+	.flex-direction-nav{
+		display: none;
+	}
+
+.flexslider a img { outline: none; border: none; }
+
+.flexslider {
+	margin: 0;
+	padding: 0;
+}
+
+/* Скрываем слайды перед загрузкой ява-скрипта */
+.flexslider .slides > li {
+	display: none;
+	-webkit-backface-visibility: hidden;
+}
+
+.flexslider .slides img {
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	position: relative;
+	
+}
+
+/* Чистим предидущее изображение для .slides */
+.slides:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+html[xmlns] .slides { display: block; }
+* html .slides { height: 1%; }
+
+
+
+/* Основной стиль слайдера */
+.flexslider {
+	position: relative;
+	zoom: 1;
+}
+.flex-container{
+	width: 925px;
+	margin: 0 auto;
+}
+/* Вы можете изменить под свои требования*/
+
+.flexslider .slides { zoom: 1; }
+
+
+/* Кнопки прокрутки. Управление */
+.flexslider .flex-control-nav {
+	position: relative;
+	text-align: center;
+	padding-bottom: 10px;
+	z-index: 999;
+}
+
+.flex-control-nav li {
+	display: inline-block;
+	zoom: 1;
+}
+
+.flex-control-paging li a {
+	display: block;
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 14px;
+	height: 14px;
+	margin: 0 5px;
+	background-color: #fff;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+
+.flex-control-paging li a.flex-active {
+	background-color: #ffde3b;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+
+
+/* Подпись к изображению */
+.flexslider .slides-text {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0 5px;
+	margin: 0;
+	font-family: Tahoma, sans-serif;
+	font-size: 14px;
+	color: #000;
+	width: 265px;
+}
+	.flexslider .slides-text ul li{
+		background: url(../img/1.png) no-repeat 0 13px;
+		padding-left: 50px;
+		padding-top: 19px;
+		padding-bottom: 4px;
+	}
+	
+.slider-img{
+	position: relative;
+	right: 7%;
+}
