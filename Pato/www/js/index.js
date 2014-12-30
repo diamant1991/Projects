@@ -52,4 +52,20 @@
 
 		};
 		filterList.init();	
+
+
+$('.dropdown').find('li').click(function(){
+
+			/* Заносим в переменную HTML код элемента
+			списка по которому кликнули */
+			var selectResult = $(this).html();
+
+			/* Находим наш скрытый инпут и передаем в него
+			значение из переменной selectResult */
+			$(this).parent().parent().find('input').val(selectResult);
+
+			/* Передаем значение переменной selectResult в ссылку которая
+			открывает наш выпадающий список и удаляем активность */
+			$(this).parent().parent().find('.padd-left').removeClass('active').html(selectResult);});
+
 	});	
