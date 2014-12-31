@@ -63,6 +63,7 @@
 	height: 95px;
 	width: 225px;
 	top: -18px;
+	z-index: 2;
 	
 }
 .left-nav{
@@ -388,10 +389,18 @@
 	background-color: #464646;
 	padding-top: 65px;
 	padding-bottom: 35px;
+	min-width: 980px;
+}
+.services-menu{
+	padding-top: 45px !important;
+	padding-bottom: 25px !important;
 }
 .under-nav nav{
 	width: 425px;
 	margin: 0 auto;
+}
+.services-nav{
+	width: auto !important;
 }
 .under-nav nav ul li a{
 	text-decoration: none;
@@ -409,6 +418,17 @@
 	padding-bottom: 1px;
 	border-right:1px solid #5c5c5c;
 }
+.services-nav ul li{
+	padding-left: 7px !important;
+	padding-right: 7px !important;
+}
+.services-nav ul{
+	overflow: hidden;
+}
+	.services-nav ul:last-child{
+		margin-top: 20px;
+		margin-left: 20px;
+	}
 .under-nav nav ul li:first-child{
 	padding-left: 0;
 }
@@ -422,13 +442,16 @@
 	padding-top: 25px;
 	background-color: #ebebeb;
 	overflow: hidden;
+	padding-bottom: 25px;
 }
 .arrow-slider{
 	display: block;
 	background:url(../images/about-arrow.png) no-repeat top left;
+
 }
 .slider-arrow-top{background-position: 0 -251px; width: 33px; height: 33px;}
-	.slider-arrow-top:hover{background-position: 0 -584px; width: 33px; height: 33px;}
+	.slider-arrow-top:hover{background-position: 0 -584px; width: 33px; height: 33px;
+	}
 .slider-arrow-bottom{background-position: 0 0; width: 33px; height: 33px; margin-top: 10px;}
 	.slider-arrow-bottom:hover{background-position: 0 -333px; width: 33px; height: 33px;}
 .slider-arrow-left{background-position: 0 -83px; width: 33px; height: 33px;float: left;}
@@ -436,11 +459,276 @@
 .slider-arrow-right{background-position: 0 -166px; width: 33px; height: 33px;float: left;margin-left: 10px;}
 	.slider-arrow-right:hover{background-position: 0 -499px; width: 33px; height: 33px;}
 
+.about-slider img{
+	-webkit-box-shadow: 3px 0px 19px 0px rgba(50, 50, 50, 0.64);
+	-moz-box-shadow:   3px 0px 19px 0px rgba(50, 50, 50, 0.64);
+	box-shadow:        3px 0px 19px 0px rgba(50, 50, 50, 0.64);
+}
+
 .arrow-left{
 	position: relative;
 	top: 220px;
+	margin-right: 15px;
 }
 .arrow-right{
 	position: relative;
 	top: 250px;
+	margin-left: 15px;
 }
+
+
+/*----------------------------------------------Страница команда--------------------------*/
+.view {
+ width: 235px;
+ height: 235px;
+ margin: 10px 5px 5px 5px;
+ float: left;
+ overflow: hidden;
+ position: relative;
+ text-align: center;
+ cursor: default;
+}
+	.portfolio-view{
+		width: 313px !important;
+		height: 215px !important;
+	}
+.view .mask, .view .content {
+ width: 235px;
+ height: 235px;
+ position: absolute;
+ overflow: hidden;
+ top: 0;
+ left: 0
+}
+	.portfolio-view .mask, .portfolio-view .content{
+		width: 313px !important;
+		height: 215px !important;
+	}
+.view img {
+ display: block;
+ position: relative
+}
+.view h2 {
+ text-transform: uppercase;
+ color: #fff;
+ text-align: center;
+ position: relative;
+ font-size: 12px;
+ padding: 10px 10px 20px 10px;
+ background: rgba(0, 0, 0, 0.8);
+ margin: 20px 0 0 0;
+ font-family: 'Century Gothic';
+ font-weight: bold;
+}
+	.portfolio-view h2{
+		font-size: 14px !important;
+	}
+.view p {
+ font-family: 'Century Gothic';
+ text-transform: uppercase;
+ font-size: 11px;
+ position: relative;
+ color: #fff;
+ text-align: center;
+ margin-top: 7px;
+}
+	.portfolio-view p{
+		font-size: 14px !important;
+	}
+.view-first img {
+ transition: all 0.4s ease-in-out 0.5s;
+}
+.view-first .mask{
+ background-color: rgba(0,0,0,0.6);
+ opacity:0;
+ transition: all 0.3s ease-in 0.4s;
+}
+	.portfolio-view .mask{
+		background-color: rgba(0,0,0,0.7) !important;
+	}
+.view-first h2{
+ opacity:0;
+background: url(../images/shape.jpg) no-repeat;
+ background-position: 30px 34px;
+ margin: 70px 40px 0px 40px;
+ transform: scale(10);
+ transition: all 0.3s ease-in-out 0.1s;
+}
+	.portfolio-view h2{
+		background-position: 70px 37px;
+	}
+.view-first p {
+ opacity:0;
+ transform: scale(10);
+ transition: all 0.3s ease-in-out 0.2s;
+}
+.view-first:hover .mask {
+ opacity:1;
+ transition-delay: 0s;
+}
+.view-first:hover img {
+ transition-delay: 0s;
+}
+.view-first:hover h2 {
+ opacity: 1;
+ transform: scale(1);
+ transition-delay: 0.1s;
+}
+.view-first:hover p {
+ opacity:1;
+ transform: scale(1);
+ transition-delay: 0.2s;
+}
+.team-wrapper{
+	padding-top: 25px;
+	padding-bottom: 45px;
+	overflow: hidden;
+	min-width: 980px;
+}
+.port-wrapper{
+	padding-top: 5px !important;
+}
+.ymaps-map{
+	min-width: 980px !important;
+	max-width: 100%;
+}
+
+/*----------------------------------------------------Страница контактов------------------------------*/
+.black-shape{
+	height: 60px;
+	background: rgba(0,0,0,0.7);
+}
+.contact-information{
+	background: url(../images/back-contacts.jpg) no-repeat;
+	background-size: cover;
+	height: 599px;
+	min-width: 980px;
+	margin-bottom: 50px;
+}
+.contact-information .container{
+	padding-top: 75px !important;
+	position: relative;
+	
+}
+.contacts-block{
+	width: 408px;
+	height: 379px;
+	background: url(../images/papper.png) no-repeat;
+	margin-left: 170px;
+	padding-left: 40px;
+	padding-top: 25px;
+	position: relative;
+}
+	.contacts-block p{
+		font-size: 18px;
+		color: #000;
+		font-family: 'Century Gothic';
+		padding-left: 35px;
+		padding-right: 35px;
+		line-height: 1.3;
+		background: url(../images/contact-png.png) no-repeat;
+		background-position: 0 28px;
+	}
+	.contacts-block p:nth-child(2){
+		margin-top: 45px;
+		background-position: 0 -82px;
+	}
+.contact-link{background: url(../images/contact-link.png) no-repeat top left; display: inline-block;}
+.contact-vopros{background-position: 0 -340px; width: 18px; height: 18px;}
+.contact-star{background-position: 0 -272px; width: 19px; height: 18px;}
+.contact-facebook{background-position: 0 0; width: 18px; height: 18px;}
+.contact-in{background-position: 0 -68px; width: 19px; height: 18px;}
+.contact-post{background-position: 0 -136px; width: 19px; height: 18px;}
+.contact-skype{ background-position: 0 -204px; width: 18px; height: 18px;}
+
+.social-link{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+.duck{
+	position: absolute;
+	z-index: 3;
+	width:393px;
+	height: 561px;
+	background: url(../images/duck.png) no-repeat; 
+	top: 0;
+	right: -60px;
+}
+
+/*-----------------------------------------------------Страница новостей---------------------------------*/
+.news-wrapper{
+	width: 313px;
+	float: left;
+	margin: 10px 6px 6px 6px;
+}
+.news-post{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.date{
+	color: #4b952d;
+	font-family: 'Century Gothic';
+	font-size: 12px;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+.news-wrapper h3{
+	text-align: center;
+	text-transform: uppercase;
+	color: #4b952d;
+	font-family: 'Century Gothic';
+	font-size: 12px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.news-wrapper p{
+	color: #000;
+	font-family: 'Century Gothic';
+	font-size: 12px;
+	line-height: 1.5;
+}
+.news-wrapper a{
+	float: right;
+	color: #000;
+	font-family: 'Century Gothic';
+	font-size: 12px;
+	margin-top: 10px;
+}
+	.news-wrapper a:hover{
+		text-decoration: none;
+	}
+.news-wrapper img{
+	width: 313px;
+	margin-top: 10px;
+}
+
+.news-post .container{
+	overflow: hidden !important;
+}
+
+.pages{
+	width: 90px;
+	margin: 0 auto;
+	padding-top: 40px;
+}
+.pages ul li{
+	float: left;
+	
+}
+	.pages ul li:last-child a{
+		border-right: 0;
+	}
+	.pages ul li a{
+		color: #000;
+		text-decoration: none;
+		font-family: 'Century Gothic';
+		padding-right: 5px;
+		padding-left: 5px;
+		font-size: 12px;
+		border-right: 1px solid #8d8d8d;
+
+	}
+	.pages ul li a:hover, .pages ul li a.active{
+		color: #4b952d;
+	}
