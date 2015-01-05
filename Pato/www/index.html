@@ -45,7 +45,7 @@
 			</figure>
 		</div><!--Конец слайдера-->
 
-		<div class="filter"> <!-- filter-->
+		<div class="filter-block"> <!-- filter-->
 			<div class="container">
 				<div class="header-social">	
 					<a href="#" class="social vopros"></a>
@@ -59,14 +59,13 @@
 				</form>
 				<div class="categories">
 					
-						<a href="#" class="padd-left">Все категории</a>
+						<a href="#" class="padd-left filter" data-filter="app card icon logo web">Все категории</a>
 							<ul id="sub-menu" class="dropdown">
-								<li>О студии</li>
-								<li>Наши клиенты</li>
-								<li>Команда</li>
-								<li>Наши партнеры</li>
-								<li>Новости</li>
-								<li>Новости</li>
+								<li class="filter" data-filter="app">О студии</li>
+								<li class="filter" data-filter="card">Наши клиенты</li>
+								<li class="filter" data-filter="icon">Команда</li>
+								<li class="filter" data-filter="logo">Наши партнеры</li>
+								<li class="filter" data-filter="web">Новости</li>
 							</ul>
 				</div>
 				<a href="#" onclick="openMenu('sub-menu');return(false)" class="arrow-bottom"></a>
@@ -76,7 +75,7 @@
 
 		<div class="portfolio-block"> <!-- Блок портфолио-->
 			
-				<div class="portfolio">
+				<div class="portfolio logo" data-cat="logo">
 					<div class="portfolio-wrapper">
 						<a href="#">
 							<img src="images/1.jpg" alt="">
@@ -85,7 +84,7 @@
 						
 					</div>
 				</div>
-				<div class="portfolio">
+				<div class="portfolio app" data-cat="app">
 					<div class="portfolio-wrapper">
 						<a href="#">
 							<img src="images/2.jpg" alt="">
@@ -102,7 +101,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="portfolio">
+				<div class="portfolio card" data-cat="card">
 					<div class="portfolio-wrapper">
 						<a href="#">
 							<img src="images/3.jpg" alt="">
@@ -110,7 +109,7 @@
 						<div class="label-text">Фирменный стиль</div>
 					</div>
 				</div>
-				<div class="portfolio">
+				<div class="portfolio icon" data-cat="icon">
 					<div class="portfolio-wrapper">
 						<a href="#">
 							<img src="images/4.jpg" alt="">
@@ -118,7 +117,7 @@
 						<div class="label-text">Нейминг</div>
 					</div>
 				</div>
-				<div class="portfolio">
+				<div class="portfolio web" data-cat="web">
 					<div class="portfolio-wrapper">
 						<a href="#">
 							<img src="images/5.jpg" alt="">
@@ -126,7 +125,7 @@
 						<div class="label-text">Брендинг</div>
 					</div>
 				</div>
-				<div class="portfolio">
+				<div class="portfolio logo" data-cat="logo">
 					<div class="portfolio-wrapper">
 						<a href="#">
 							<img src="images/6.jpg" alt="">
@@ -134,7 +133,7 @@
 						<div class="label-text">Рекламные концепции</div>
 					</div>
 				</div>
-				<div class="portfolio">
+				<div class="portfolio app" data-cat="app">
 					<div class="portfolio-wrapper">
 						<a href="#">
 							<img src="images/7.jpg" alt="">
@@ -142,7 +141,7 @@
 						<div class="label-text">Брендбук</div>
 					</div>
 				</div>
-				<div class="portfolio">
+				<div class="portfolio card" data-cat="card">
 					<div class="portfolio-wrapper">
 						<a href="#">
 							<img src="images/8.jpg" alt="">
@@ -150,7 +149,7 @@
 						<div class="label-text">Упаковки</div>
 					</div>
 				</div>
-				<div class="portfolio">
+				<div class="portfolio icon" data-cat="icon">
 					<div class="portfolio-wrapper">
 						<a href="#">
 							<img src="images/9.jpg" alt="">
@@ -158,7 +157,7 @@
 						<div class="label-text">Промышленный дизайн</div>
 					</div>
 				</div>
-				<div class="portfolio">
+				<div class="portfolio web" data-cat="web">
 					<div class="portfolio-wrapper">
 						<a href="#">
 							<img src="images/10.jpg" alt="">
@@ -166,7 +165,7 @@
 						<div class="label-text">Выставочные стенды</div>
 					</div>
 				</div>
-				<div class="portfolio">
+				<div class="portfolio logo" data-cat="logo">
 					<div class="portfolio-wrapper">
 						<a href="#">
 							<img src="images/11.jpg" alt="">
@@ -174,7 +173,7 @@
 						<div class="label-text">Дизайн интерьера</div>
 					</div>
 				</div>
-				<div class="portfolio">
+				<div class="portfolio app" data-cat="app">
 					<div class="portfolio-wrapper">
 						<a href="#">
 							<img src="images/12.jpg" alt="">

@@ -22,7 +22,7 @@
 		$(function () {
 		var filterList = {
 			init: function () {
-				$('#portfolio').mixitup({
+				$('.portfolio-block').mixitup({
 					targetSelector: '.portfolio',
 					filterSelector: '.filter',
 					effects: ['fade'],
@@ -67,5 +67,18 @@ $('.dropdown').find('li').click(function(){
 			/* Передаем значение переменной selectResult в ссылку которая
 			открывает наш выпадающий список и удаляем активность */
 			$(this).parent().parent().find('.padd-left').removeClass('active').html(selectResult);});
+
+
+$('.spoiler-body').hide();
+$('.spoiler-title').click(function(){
+    $(this).toggleClass('opened').toggleClass('closed').next().slideToggle();
+    if($(this).hasClass('opened')) {
+        $(this).html('Скрыть текст');
+    }
+    else {
+        $(this).html('Показать текст');
+    }
+});
+
 
 	});	
